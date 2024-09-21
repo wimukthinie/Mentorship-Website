@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Platform</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mentorship Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mentors">Mentors</a></li>
+                    <li><a href="#mentees">Mentees</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to Our Mentorship Platform</h2>
+            <p>We connect mentors and mentees to foster learning and growth. Register today to find a mentor or mentee and take the next step in your journey!</p>
+            <button onclick="scrollToSection('register')">Get Started</button>
+        </div>
+    </section>
+
+    <section id="mentors" class="section">
+        <div class="container">
+            <h2>Our Mentors</h2>
+            <div id="mentor-list" class="profile-list"></div>
+        </div>
+    </section>
+
+    <section id="mentees" class="section">
+        <div class="container">
+            <h2>Our Mentees</h2>
+            <div id="mentee-list" class="profile-list"></div>
+        </div>
+    </section>
+
+    <section id="register" class="section">
+        <div class="container">
+            <h2>Register as Mentor or Mentee</h2>
+            <form id="register-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="mentor">Mentor</option>
+                    <option value="mentee">Mentee</option>
+                </select>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" required></textarea>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mentorship Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
